@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt.Println("Escreva um Número")
+	fmt.Scan(&n)
+	if 90>n && n>20{
+		fmt.Println("Está compreendido")
+	}else{
+		fmt.Println("Não está compreendido")}
+}
