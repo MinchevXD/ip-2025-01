@@ -1,8 +1,11 @@
 package main
 
 import "fmt"
+var soma int 
 
 func main() {for i := 1; i <= 100; i++ {
-fmt.Println (i,"\n")}
-fmt.Println (5050)
+fmt.Println (i,"\n")
+soma+=i
+}
+fmt.Println (soma)
 }
