@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n, i float64
+
+	fmt.Print("DIGITE UM NÚMERO: ")
+	fmt.Scan(&n)
+
+	if n <= 5 || n >= 2000 {
+		fmt.Println("Número inválido! Digite um valor entre 5 e 2000")
+
+	}
+
+	// Calculate and print results
+	for i = 1; i <= n/2; i++ {
+		m := i * 2
+		fmt.Printf("%.0f^2 = %.0f\n", m, m*m)
+	}
+}
