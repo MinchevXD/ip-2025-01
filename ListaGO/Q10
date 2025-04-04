@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main() {
+	var a, b, c, d, r float32
+	fmt.Println("Escreva os valores de a,b,c,d")
+	fmt.Scan(&a, &b, &c, &d)
+	r = a*c - b*d
+	fmt.Println("O VALOR DO DETERMINANTE E =", r)
+
+}
