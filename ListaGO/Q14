@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var h, a float64
+
+	fmt.Println("DIGITE O VALOR DA ALTURA E ARESTA DA PIRÂMIDE RESPECTIVAMENTE:")
+	fmt.Scan(&h, &a) // Corrected Scan function and added &
+
+	volume := (h * math.Pow(a, 2) * math.Sqrt(3) / 2)
+
+	fmt.Printf("\nO VOLUME DA PIRAMIDE E = %.2f METROS CUBICOS\n", volume)
+}
