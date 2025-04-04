@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var n, i int
+	var soma, a float64
+	soma = 0
+
+	fmt.Print("DIGITE UM NÚMERO: ")
+	fmt.Scan(&n)
+
+	for i = 1; i <= n; i++ {
+		a = 1.0 / float64(i)
+		soma += a
+	}
+	fmt.Printf("%.2f\n", soma)
+}
