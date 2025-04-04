@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var a, n float64
+
+	fmt.Println("Digite o valor do salário mínimo:")
+	fmt.Scan(&a)
+	fmt.Println("Digite o número de kW gastos:")
+	fmt.Scan(&n)
+	k := 0.7 * a / 100
+	fmt.Printf("\nCusto por kW: R$ %.2f\n", k)
+	fmt.Printf("Custo do consumo: R$ %.2f\n", k*n)
+	fmt.Printf("Custo com desconto: R$ %.2f\n", 0.9*k*n)
+}
