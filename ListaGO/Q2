@@ -1,0 +1,39 @@
+package main
+
+import (
+	"fmt"
+)
+
+type Teste struct {
+	a, b, c, d, m int
+	renda         float64
+}
+
+func main() {
+	var n int
+	fmt.Println("Digite o número de testes: ")
+	fmt.Scan(&n)
+
+	testes := make([]Teste, n)
+	for i := 0; i < n; i++ {
+		fmt.Printf("\nTeste %d:\n", i+1)
+		fmt.Println("Número de pessoas que compraram ingresso para o jogo:")
+		fmt.Scan(&testes[i].a)
+		fmt.Println("Percentagem de pessoas na categoria Popular:")
+		fmt.Scan(&testes[i].b)
+		fmt.Println("Percentagem de pessoas na categoria Geral:")
+		fmt.Scan(&testes[i].c)
+		fmt.Println("Percentagem de pessoas na categoria Arquibancada:")
+		fmt.Scan(&testes[i].d)
+		fmt.Println("Percentagem de pessoas na categoria Cadeiras:")
+		fmt.Scan(&testes[i].m)
+		testes[i].renda = float64(testes[i].a) * (float64(testes[i].b)*0.01 +
+			float64(testes[i].c)*5*0.01 +
+			float64(testes[i].d)*10*0.01 +
+			float64(testes[i].m)*20*0.01)
+	}
+	fmt.Println("\nResultados:")
+	for i, teste := range testes {
+		fmt.Printf("A RENDA DO JOGO N.%d E = %.2f\n", i+1, teste.renda)
+	}
+}
