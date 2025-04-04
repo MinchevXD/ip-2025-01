@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var f, p, m, c float32
+	fmt.Println("Digite o valor em fahrenheit:")
+	fmt.Scan(&f)
+	fmt.Println("Digite o valor em polegadas:")
+	fmt.Scan(&p)
+	c = (5*f - 160) / 9
+	m = p * 25.4
+	fmt.Println("O VALOR EM CELSIUS = ", c, "\n")
+	fmt.Println("A QUANTIDADE DE CHUVA E = ", m, "\n")
+}
