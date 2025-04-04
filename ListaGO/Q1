@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	var a, b, c float32
+	fmt.Println("Digite os valores das notas:")
+	fmt.Scan(&a, &b, &c)
+	soma := (a + b + c) / 3
+	if soma < 6 {
+		fmt.Println("Média:", soma, "\nReprovado")
+	} else {
+		fmt.Println("Média:", soma, "\nAprovado")
+	}
+}
