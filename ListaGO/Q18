@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, y, n int
+	var r, soma float64
+	soma = 0
+
+	fmt.Print("DIGITE O PRIMEIRO TERMO, A RAZÃO E O NÚMERO DE ELEMENTOS RESPECTIVAMENTE: ")
+	fmt.Scan(&x, &y, &n)
+
+	for k := 0; k < n; k++ {
+		r = float64(x) + float64(k)*float64(y)
+		soma += r
+	}
+
+	fmt.Printf("O resultado da PA é: %.2f\n", soma)
+}
