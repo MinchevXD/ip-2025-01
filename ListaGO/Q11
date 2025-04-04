@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+var x int
+
+func main() {
+	fmt.Print("Digite um número inteiro: ")
+	fmt.Scan(&x) // Added & to read into variable address
+
+	if x%15 == 0 {
+		fmt.Println("O NÚMERO É DIVISÍVEL")
+	} else {
+		fmt.Println("O NÚMERO NÃO É DIVISÍVEL ")
+	}
+}
