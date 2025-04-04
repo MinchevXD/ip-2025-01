@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var a, b float64
+
+	fmt.Print("DIGITE O SALÁRIO ATUAL: ")
+	fmt.Scan(&a)
+
+	if a <= 300 {
+		b = a + 0.5*a
+	} else {
+		b = a + 0.3*a
+	}
+	b = (b * 100) / 100
+
+	fmt.Printf("SALARIO COM REAJUSTE = %.2f\n", b)
+}
