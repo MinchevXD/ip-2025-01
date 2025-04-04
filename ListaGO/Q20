@@ -1,0 +1,12 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var a, b, c int
+	fmt.Println("Digite o númeor de horas, minutos e segundos")
+	fmt.Scan(&a, &b, &c)
+	fmt.Println("O TEMPO EM SEGUNDOS E =", 3600*a+60*b+c)
+}
