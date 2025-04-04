@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var raio, altura float32
+	fmt.Print("Digite o valor do raio: ")
+	fmt.Scan(&raio)
+	fmt.Print("Digite o valor da altura : ")
+	fmt.Scan(&altura)
+	area := (3.14159 * raio * raio * 2) + (2 * 3.14159 * raio * altura)
+	c := area * 100
+	fmt.Printf("Custo total: R$ %.2f\n", c)
+}
