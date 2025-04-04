@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Println("DIGITE O VALOR DE HORAS GASTAS:")
+	fmt.Scan(&x)
+
+	if x%3 == 0 {
+		fmt.Println("O VALOR A PAGAR E =", x*10/3)
+	} else {
+		valor := (x-x%3)*10/3 + (x%3)*5
+		fmt.Println("O VALOR A PAGAR E =", valor)
+	}
+}
