@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	var a, b int
+	fmt.Println("Digite dois valores")
+	fmt.Scan(&a, &b)
+	if a+b > 20 {
+		fmt.Println(a + b + 8)
+	} else {
+		fmt.Println(a + b - 5)
+	}
+
+}
