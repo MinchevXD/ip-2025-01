@@ -1,1 +1,14 @@
+package main
 
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Printf("Digite um número: ")
+	fmt.Scan(&x) 
+	if x%2 == 0 {
+		fmt.Println("O NÚMERO É PAR")
+	} else {
+		fmt.Println("O NÚMERO É ÍMPAR")
+	}
+}
