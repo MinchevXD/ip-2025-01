@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Println("Digite um valor")
+	fmt.Scan(&x)
+	if x > 20 && x < 90 {
+		fmt.Println("O número está contido")
+	} else {
+		fmt.Println("O número não está contido ")
+	}
+}
