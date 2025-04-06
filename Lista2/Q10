@@ -1,0 +1,38 @@
+package main
+
+import "fmt"
+
+func main() {
+	var d, tipo int
+	fmt.Println("Informe o número do destino (1 - Região Norte, 2 - Região Nordeste, 3 - Região Centro-Oeste, 4 - Região Sul):")
+	fmt.Scan(&d)
+	fmt.Println("Informe o tipo da passagem (1 - Ida e Volta, 2 - Só Ida):")
+	fmt.Scan(&tipo)
+	if d == 1 {
+		if tipo == 1 {
+			fmt.Println("900,00")
+		} else if tipo == 2 {
+			fmt.Println("500,00")
+		}
+	} else if d == 2 {
+		if tipo == 1 {
+			fmt.Println("650,00")
+		} else if tipo == 2 {
+			fmt.Println("350,00")
+		}
+	} else if d == 3 {
+		if tipo == 1 {
+			fmt.Println("600,00")
+		} else if tipo == 2 {
+			fmt.Println("350,00")
+		}
+	} else if d == 4 {
+		if tipo == 1 {
+			fmt.Println("550,00")
+		} else if tipo == 2 {
+			fmt.Println("300,00")
+		}
+	} else {
+		fmt.Println("Destino inválido!")
+	}
+}
