@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var x int
-	fmt.Println("Digite um número:")
-	fmt.Scan(&x)
-	if x%5 == 0 {
-		fmt.Println("O número é divisível")
+	var x, y int
+	fmt.Println("Digite os valores de A e B, respectivamente")
+	fmt.Scan(&x, &y)
+	if x%y == 0 {
+		fmt.Println("A é divísivel por B")
 	} else {
-		fmt.Println("O número não é divisível")
+		fmt.Println("A não é divisível por B")
 	}
 
 }
