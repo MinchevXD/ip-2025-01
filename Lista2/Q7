@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, y, z int
+	fmt.Println("Digite os valores de A,B,C respectivamente")
+	fmt.Scan(&x, &y, &z)
+	if x > y && y > z {
+		fmt.Println(x, y, z)
+	} else if x > z && z > y {
+		fmt.Println(x, z, y)
+	} else if y > x && x > z {
+		fmt.Println(y, x, z)
+	} else if y > z && z > x {
+		fmt.Println(y, z, x)
+	} else if z > x && x > y {
+		fmt.Println(z, x, y)
+	} else if z > y && y > x {
+		fmt.Println(z, y, x)
+	}
+
+}
