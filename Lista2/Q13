@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, b int
+	fmt.Println("Digite um número de 3 dígitos:")
+	fmt.Scan(&x)
+	if x < 100 || x > 999 {
+		fmt.Println("O número deve ter 3 dígitos.")
+	} else if x < 0 {
+		fmt.Println("O número deve ser positivo.")
+	} else {
+		b = (x / 10) % 10
+		fmt.Println(b)
+	}
+}
