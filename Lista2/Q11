@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, y float32
+	fmt.Println("Escreva o valor de x ")
+	fmt.Scan(&x)
+	y = 8 / (2 - x)
+	if x == 2 {
+		fmt.Println("Valor inválido")
+	} else {
+		fmt.Println("f(x)=", y)
+	}
+
+}
