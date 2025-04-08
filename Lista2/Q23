@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Println("Digite o valor da idade")
+	fmt.Scan(&x)
+	if x < 16 {
+		fmt.Println("Não-Eleitor")
+	} else if x >= 18 && x <= 65 {
+		fmt.Println("Eleitor obrigatório")
+	} else if (x >= 16 && x < 18) || (x > 65) {
+		fmt.Println("Eleitor facultativo ")
+	}
+}
