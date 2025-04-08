@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x float32
+	var tipo1, tipo2 string
+	fmt.Println("Digite o valor do DVD:")
+	fmt.Scan(&x)
+	fmt.Println("Digite o dia da semana e o tipo de DVD (comum ou lançamento):")
+	fmt.Scan(&tipo1, &tipo2)
+	p := x
+	if tipo1 == "segunda" || tipo1 == "terça" || tipo1 == "quinta" {
+		p = x * 0.6
+	}
+	if tipo2 == "lançamento" {
+		p = p * 1.15
+	}
+	fmt.Printf("O preço final do aluguel do DVD é R$ %.2f\n", p)
+}
