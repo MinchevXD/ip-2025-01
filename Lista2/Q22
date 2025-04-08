@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, y int
+	var sb, sl float64
+	fmt.Println("Dê a matrícula e a qauntidade de horas extras")
+	fmt.Scan(&x, &y)
+	sb = float64(788*3 + y*10)
+	sl = sb * 0.68
+	fmt.Println("O valor do salário bruto é=%.2f", sb)
+	fmt.Println("O valor do salário líquido é=%.2f", sl)
+}
