@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, y, z int
+	var tipo = []string{
+		"janeiro", "fevereiro", "março", "abril", "maio", "junho",
+		"julho", "agosto", "setembro", "outubro", "novembro", "dezembro",
+	}
+
+	fmt.Println("Digite o dia, mês e ano:")
+	fmt.Scan(&x, &y, &z)
+	fmt.Printf("%d de %s de %d\n", x, tipo[y-1], z)
+}
