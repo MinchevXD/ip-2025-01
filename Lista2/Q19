@@ -1,0 +1,32 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var tipo string
+	var x, h, v, a float64
+	fmt.Println("escolha a figura desejada (1-cone / 2-cilindro /3-esfera)")
+	fmt.Scan(&tipo)
+	fmt.Println("Dê o valor do raio da figura desejada ")
+	fmt.Scan(&x)
+	if tipo == "1" {
+		fmt.Println("Dê o valor da altura ")
+		fmt.Scan(&h)
+		v := math.Pi * x * x * h / 3
+		a := math.Pi * x * math.Sqrt(x*x+h*h)
+		fmt.Printf(" O VALOR DO VOLUME É %f E O VALOR DA ÁREA É %f", v, a)
+	} else if tipo == "2" {
+		v = math.Pi * x * x * h
+		a = 2 * math.Pi * x * h
+		fmt.Println("Dê o valor da altura ")
+		fmt.Scan(&h)
+		fmt.Printf(" O VALOR DO VOLUME É %f E O VALOR DA ÁREA É %f", v, a)
+	} else if tipo == "3" {
+		v = math.Pi * x * x * x * 4 / 3
+		a = 4 * math.Pi * x * x
+		fmt.Printf(" O VALOR DO VOLUME É %f E O VALOR DA ÁREA É %f", v, a)
+	}
+}
