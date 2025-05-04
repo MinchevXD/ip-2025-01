@@ -1,1 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 4px solid #4B0082;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1, header h2, header h3 {
+    color: #4B0082;
+    margin-bottom: 8px;
+}
+
+header img {
+    width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(75, 0, 130, 0.3);
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #20B2AA;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+section.sobre {
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 8px solid #00BFFF;
+}
+
+section.imagem img {
+    width: 300px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+    border: 3px solid #4B0082;
+}
+
+.projetos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+}
+
+.projeto {
+    background-color: #FFF0F5;
+    padding: 20px;
+    border-left: 6px solid #FF7F50;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projeto h2 {
+    margin-bottom: 10px;
+    color: #FF4500;
+}
+
+.projeto a {
+    text-decoration: none;
+    color: #008B8B;
+    font-weight: bold;
+}
+
+.projeto a:hover {
+    color: #4B0082;
+}
+
+.contato {
+    padding: 20px;
+    background-color: #FFFACD;
+    border-top: 4px solid #4B0082;
+}
+
+.contato h2 {
+    margin-bottom: 15px;
+    color: #4B0082;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+form button {
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #5E2D91;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #20B2AA;
+    color: rgb(255, 245, 245);
+    font-weight: bold;
+}
