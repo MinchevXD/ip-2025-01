@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var numeros [10]int
+	var encontrou bool = false
+
+	fmt.Println("Digite 10 números inteiros:")
+	for i := 0; i < 10; i++ {
+		fmt.Printf("Número %d: ", i+1)
+		fmt.Scan(&numeros[i])
+	}
+	fmt.Println("\nNúmeros maiores que 50 e suas posições:")
+	for i, valor := range numeros {
+		if valor > 50 {
+			fmt.Printf("Posição %d: %d\n", i+1, valor)
+			encontrou = true
+		}
+	}
+
+	if !encontrou {
+		fmt.Println("Nenhum número maior que 50 foi encontrado.")
+	}
+}
