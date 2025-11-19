@@ -1,4 +1,6 @@
-| ID | Nome | Papel/Cargo (Na Organização) | Papel no Projeto | Tipo | Fase do Ciclo de Vida | Poder / Influência | Interesse | Classificação (A,B,C,D) | Principais Expectativas / Interesses | Estratégia de Engajamento (Inicial) |
+## 👥 Matriz de Análise de Stakeholders
+
+| ID | Nome | Papel/Cargo (Na Organização) | Papel no Projeto | Tipo | Fase do Ciclo de Vida | Poder | Interesse | Classif. | Principais Expectativas / Interesses | Estratégia de Engajamento |
 | :---: | :--- | :--- | :--- | :---: | :--- | :---: | :---: | :---: | :--- | :--- |
 | **STK-001** | Patrocinador Fictício | Alta Direção | Patrocinador | Interno | Todas | Alto | Alto | A | ROI, cumprimento do prazo, redução da taxa de evasão (Objetivos SMART). | Gerir de Perto |
 | **STK-002** | Especialista de Negócio Fictício (Docente) | Professor / Coordenador | Cliente / Utilizador Chave | Externo | Requisitos, Validação, Operação | Alto | Alto | A | Facilidade de uso do módulo de criação de missões, relatórios de desempenho e impacto pedagógico. | Gerir de Perto (envolver em protótipos) |
